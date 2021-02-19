@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-	<title>Something</title>
+	<title>TODO</title>
 	<meta charset="utf-8"/>
     <link rel="stylesheet" href="index.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
   </head>
 
   <body>
-	<div class="js-clock">
-		<h1>00:00</h1>
-	</div>
-	<form class="js-form form">
-		<input type="text" placeholder="What is your name?"/>
-	</form>
-	<h4 class="js-greetings greetings"></h4>
-	<form class="js-toDoForm">
-		<input type="text" placeholder="Write a to do"/>
-	</form>
-	<ul class="js-toDoList">
 
-	</ul>
-	<span class="js-weather"></span>
+	  <div class="mainFrame">
+		<div class="leftFrame">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Dx5qFachd3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+  
+		<div class="centerFrame">				
+			<div class="topFrame">
+			</div>		
+			<form class="js-form form">
+				<input type="text" placeholder="What is your name?"/>
+			</form>
+			<h2 class="js-greetings greetings"></h2>		  
+			<div class="js-clock">
+				<span>00:00</span>
+			</div>
+			<span class="js-weather"></span>
+		</div>
+  
+		<div class="rightFrame">
+		  <form class="js-toDoForm">
+			  <div>
+				  <h1>Tasks</h1>
+				  <form class="js-toDoForm">
+					<input type="text" placeholder="Add task" />
+				  </form>
+			  </div>
+			  <div>
+				  <h2>Pending</h2>
+				  <ul class="js-pendingList"></ul>
+			  </div>
+			  <div>
+				  <h2>Finished</h2>
+				  <ul class="js-finishedList"></ul>
+			  </div>
+		  </form>
+		</div>
+	  </div>
+	
 	<script src="clock.js"></script>
 	<script src="greeting.js"></script>
 	<script src="todo.js"></script>

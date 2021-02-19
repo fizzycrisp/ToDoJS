@@ -2,7 +2,14 @@ const body = document.querySelector('body');
 
 const IMG_NUMBER = 3;
 
-function paintImage(imgNumber) {
+function paintImage(path) {
+	const image = new Image();
+	image.src = `images/${path}.jpg`;
+	image.classList.add('backgroudImage');
+	body.prepend(image);
+}
+
+function paintRandomImage(imgNumber) {
 	const image = new Image();
 	image.src = `images/${imgNumber + 1}.jpg`;
 	image.classList.add('backgroudImage');
@@ -15,8 +22,8 @@ function genRandom() {
 }
 
 function init() {
-	const randomNumber = genRandom();
-	paintImage(randomNumber);
+	//const randomNumber = genRandom();
+	paintImage('coffee');
 }
 
 init();
