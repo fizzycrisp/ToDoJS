@@ -22,8 +22,8 @@ function genRandom() {
 }
 
 function init() {
-	//const randomNumber = genRandom();
-	paintImage('coffee');
+	const randomNumber = genRandom();
+	paintImage(randomNumber);
 }
 
 init();
